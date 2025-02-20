@@ -5,6 +5,7 @@ Manajemen Buku Perpustakaan
 Me-Manajemen Buku: Menambahkan buku, mengedit serta menghapus buku yang telah di submit.
 
 # Flowchart
+Berikut adalah flowchart yang menggambarkan alur kerja aplikasi:
 ![Flowchart](https://github.com/user-attachments/assets/000d11c0-1a9b-484f-9708-d4a29d7040a4)
 
 # Perkenalan Team
