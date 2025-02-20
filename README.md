@@ -2,7 +2,7 @@
 Manajemen Buku Perpustakaan
 
 # Kegunaan Aplikasi
-Me-Manajemen Buku: Menambahkan buku, mengedit serta menghapus buku yang telah di submit.
+Me-Manajemen Buku: Menambahkan buku, mengedit buku serta menghapus buku yang telah di submit. Terdapat juga form register & login sebelum masuk ke bagian manajemen buku.
 
 # Flowchart
 Berikut adalah flowchart yang menggambarkan alur kerja aplikasi:
