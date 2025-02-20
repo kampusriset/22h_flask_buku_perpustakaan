@@ -1,10 +1,11 @@
 # Nama Aplikasi
 Manajemen Buku Perpustakaan
 
-##Kegunaan Aplikasi
+# Kegunaan Aplikasi
 Me-Manajemen Buku
-#Flowchart
 
-#Perkenalan Team
+# Flowchart
 
-#Link demo
+# Perkenalan Team
+
+# Link demo
