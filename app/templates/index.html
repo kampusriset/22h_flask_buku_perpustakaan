@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Daftar Buku</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Judul</th>
+            <th>Pengarang</th>
+            <th>Tahun</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.year }}</td>
+            <td>
+                <a href="{{ url_for('main.edit_book', book_id=book.id) }}" class="btn btn-warning">Edit</a>
+                <form action="{{ url_for('main.delete_book', book_id=book.id) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="btn btn-danger">Hapus</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

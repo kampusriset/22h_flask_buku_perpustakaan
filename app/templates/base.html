@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Buku Perpustakaan Ceria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Manajemen Buku Perpustakaan Amikom</h1>
+    </header>
+    <img src="" alt="" srcset="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">Manajemen Buku</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    {% if current_user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('main.add_book') }}">Tambah Buku</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('main.logout') }}">Logout</a></li>
+                    {% else %}
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('main.login') }}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('main.register') }}">Register</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <div class="mt-4">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="alert alert-info">
+                        {% for message in messages %}
+                            {{ message }}<br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Manajemen Buku Perpustakaan Amikom</p>
+    </footer>
+</body>
+</html> 
