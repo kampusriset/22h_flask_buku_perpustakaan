@@ -14,5 +14,5 @@ Berikut adalah flowchart yang menggambarkan alur kerja aplikasi:
 - Fauzan Indra Kusuma (Mendemokan aplikasi dan membuat laporan)
   
 # Link demo
-Anda dapat menonton video dokumentasi aplikasi melalui tautan berikut: Klik Disini
-https://youtu.be/eMv5Umu8v4s?si=gQD-WXLmrli7Rku1
+Anda dapat menonton video dokumentasi aplikasi melalui tautan berikut: [Klik Disini](https://youtu.be/eMv5Umu8v4s?si=gQD-WXLmrli7Rku1)
+
